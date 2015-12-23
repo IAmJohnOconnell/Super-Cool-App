@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Intro_App_Exercise__red_or_blue_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="yOc-ZV-N45">
+                                <rect key="frame" x="189" y="279" width="222" height="42"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gt3-0M-01V">
+                                        <rect key="frame" x="0.0" y="0.0" width="66" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="66" id="6Is-5M-Q1Z"/>
+                                            <constraint firstAttribute="height" constant="42" id="cwo-6C-Z7h"/>
+                                        </constraints>
+                                        <state key="normal" title="Hide Left"/>
+                                        <connections>
+                                            <action selector="hLeft:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mef-Hs-S4L"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1T-w6-y0x">
+                                        <rect key="frame" x="146" y="0.0" width="76" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="icd-m6-qPV"/>
+                                            <constraint firstAttribute="width" constant="76" id="lbK-wa-nXd"/>
+                                        </constraints>
+                                        <state key="normal" title="Hide Right"/>
+                                        <connections>
+                                            <action selector="hRight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4CV-cn-Cp2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Back at it!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bs-TH-2Og">
+                                <rect key="frame" x="239" y="28" width="123" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="123" id="CHd-Qj-4O2"/>
+                                    <constraint firstAttribute="height" constant="21" id="svI-Nz-8BF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="1Py-bP-6AN">
+                                <rect key="frame" x="166" y="98" width="280" height="128"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0012" translatesAutoresizingMaskIntoConstraints="NO" id="hHJ-0T-Nt4">
+                                        <rect key="frame" x="0.0" y="0.0" width="132" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="132" id="4Xv-Ez-bu3"/>
+                                            <constraint firstAttribute="height" constant="128" id="WWz-yv-CKL"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0013" translatesAutoresizingMaskIntoConstraints="NO" id="Vq0-0D-SlA">
+                                        <rect key="frame" x="148" y="0.0" width="132" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="137" id="UgQ-oe-Gfz"/>
+                                            <constraint firstAttribute="height" constant="128" id="vZl-ij-3vB"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="dQa-sv-Asd"/>
+                                    <constraint firstAttribute="width" constant="280" id="ydt-Rc-vfs"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hah-l0-Dpc">
+                                <rect key="frame" x="253" y="407" width="94" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="452-z3-Nu3"/>
+                                    <constraint firstAttribute="width" constant="94" id="Pdo-jB-WXO"/>
+                                </constraints>
+                                <state key="normal" title="Run it Back!"/>
+                                <connections>
+                                    <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a4a-BO-nLi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="1Py-bP-6AN" firstAttribute="top" secondItem="0bs-TH-2Og" secondAttribute="bottom" constant="49" id="JyZ-vh-kD4"/>
+                            <constraint firstItem="Hah-l0-Dpc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NHG-JU-Z6u"/>
+                            <constraint firstItem="yOc-ZV-N45" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ngg-0M-t0N"/>
+                            <constraint firstItem="1Py-bP-6AN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Riq-kT-lwB"/>
+                            <constraint firstItem="1Py-bP-6AN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WF0-z8-gkK"/>
+                            <constraint firstItem="Hah-l0-Dpc" firstAttribute="top" secondItem="yOc-ZV-N45" secondAttribute="bottom" constant="86" id="d8F-Mq-zu2"/>
+                            <constraint firstItem="0bs-TH-2Og" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="nhY-ns-ZuI"/>
+                            <constraint firstItem="yOc-ZV-N45" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nmh-lx-9uJ"/>
+                            <constraint firstItem="0bs-TH-2Og" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rN2-mw-7z4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="headingLabel" destination="0bs-TH-2Og" id="SSQ-AR-abD"/>
+                        <outlet property="lPic" destination="hHJ-0T-Nt4" id="D6w-XR-ITV"/>
+                        <outlet property="rPic" destination="Vq0-0D-SlA" id="GbR-9B-ZXN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_0012" width="640" height="640"/>
+        <image name="IMG_0013" width="640" height="640"/>
+    </resources>
+</document>
